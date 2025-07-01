@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TokViewBooster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .login-container {
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .login-logo {
+            margin-bottom: 30px;
+        }
+        
+        .login-logo h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #FE2C55, #25F4EE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        
+        .login-form {
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus {
+            border-color: #FE2C55;
+            box-shadow: 0 0 0 3px rgba(254, 44, 85, 0.1);
+            outline: none;
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(45deg, #FE2C55, #25F4EE);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(254, 44, 85, 0.3);
+        }
+        
+        .notice-box {
+            background: #f8f9fa;
+            border-left: 4px solid #FE2C55;
+            padding: 15px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .notice-box h3 {
+            color: #FE2C55;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .smm-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .smm-link:hover {
+            background: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .login-container {
+                margin: 60px 20px;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">TokViewBooster</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="login.html" class="btn btn-outline">Get Started</a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-logo">
+                    <h1>TokViewBooster</h1>
+                    <p>Sign in to your account</p>
+                </div>
+                
+                <div class="notice-box">
+                    <h3>Important Notice</h3>
+                    <p>TokViewBooster is now part of SMM Panel. Please visit our new platform for all your social media marketing needs.</p>
+                    <a href="http://smm-panel.com/" class="smm-link" target="_blank" rel="noopener noreferrer">
+                        Go to SMM Panel <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <form class="login-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter your username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="login-btn">Sign In</button>
+                </form>
+                
+                <p>Don't have an account? <a href="http://smm-panel.com/register" target="_blank" rel="noopener noreferrer" style="color: #FE2C55; text-decoration: none;">Sign up now</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>TokViewBooster</h3>
+                    <p>Boost your TikTok presence with our powerful tools and services. Grow your audience and increase engagement.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#testimonials">Testimonials</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> support@tokviewbooster.com</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-partners">
+                    <h4>Our Partners</h4>
+                    <div class="partners-grid">
+                        <a href="https://socialmarketing90.com/" target="_blank" rel="noopener noreferrer">SocialMarketing90</a>
+                        <a href="https://smm-panel.com/" target="_blank" rel="noopener noreferrer">SMM Panel</a>
+                        <a href="https://www.socialpilot.co/" target="_blank" rel="noopener noreferrer">Social Pilot</a>
+                        <a href="https://www.inbeat.co/articles/tiktok-growth-strategy/" target="_blank" rel="noopener noreferrer">Inbeat</a>
+                        <a href="https://influencermarketinghub.com/tiktok-marketing-report/" target="_blank" rel="noopener noreferrer">Influencer Marketing Hub</a>
+                        <a href="https://www.socialmediaexaminer.com/tiktok-marketing-content-strategy-for-businesses/" target="_blank" rel="noopener noreferrer">Social Media Examiner</a>
+                        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+                        <a href="https://getstarted.tiktok.com/Business-accounts" target="_blank" rel="noopener noreferrer">TikTok for Business</a>
+                        <a href="https://www.tiktok.com/shop" target="_blank" rel="noopener noreferrer">TikTok Shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TokviewBooster. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    <a href="terms-of-service.html" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form submission prevention
+        document.querySelector('.login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('TokViewBooster is now part of SMM Panel. Please visit smm-panel.com for all your social media marketing needs.');
+        });
+        
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
